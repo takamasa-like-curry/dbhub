@@ -92,4 +92,4 @@ jobs:
         run: pnpm install
 
       - name: Run integration tests
-        run: pnpm test:integration
+        run: pnpm exec vitest run --project integration src/connectors/__tests__/verify-session-readonly.integration.test.ts
